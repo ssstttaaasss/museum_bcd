@@ -4,6 +4,55 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Louvre</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: Arial, sans-serif;
+				background: linear-gradient(to right, #000092, #7d0000);
+			}
+			header {
+				background-color: #333;
+				color: #fff;
+				text-align: center;
+				padding: 20px 0;
+			}
+			h1 {
+				margin: 0;
+				font-size: 2.5rem;
+				background-color: #333;
+				padding: 10px;
+			}
+			.gallery {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				grid-gap: 20px;
+				justify-content: center;
+				margin-top: 20px;
+				margin-left: auto; /* Вирівнюємо відцентрування таблиці */
+				margin-right: auto; /* Вирівнюємо відцентрування таблиці */
+			}
+			.gallery img {
+				max-width: 70%;
+				height: auto;
+				transition: transform 0.3s ease-in-out;
+			}
+			.gallery img:hover {
+				transform: scale(1.1);
+			}
+		</style>
 	</head>
-	<body></body>
+	<body>
+		<header>
+			<h1>Louvre</h1>
+		</header>
+
+		<div class="gallery">
+			<img src="/images/f1.png" alt="f1" />
+			<img src="/images/f2.png" alt="f2" />
+			<img src="/images/f3.png" alt="f3" />
+			<img src="/images/f4.png" alt="f4" />
+		</div>
+	</body>
 </html>

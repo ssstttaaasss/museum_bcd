@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>National Archeology Museum</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: Arial, sans-serif;
+				background: linear-gradient(to right, #0101fc, #ffffff);
+			}
+			header {
+				background-color: #333;
+				color: #fff;
+				text-align: center;
+				padding: 20px 0;
+			}
+			h1 {
+				margin: 0;
+				font-size: 2.5rem;
+				background-color: #333;
+				padding: 10px;
+			}
+			.gallery {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				grid-gap: 20px;
+				justify-content: center;
+				margin-top: 20px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.gallery img {
+				max-width: 70%;
+				height: auto;
+				transition: transform 0.3s ease-in-out;
+			}
+			.gallery img:hover {
+				transform: scale(1.1);
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>National Archaeological Museum</h1>
+		</header>
+
+		<div class="gallery">
+			<img src="/images/g1.png" alt="f1" />
+			<img src="/images/g2.png" alt="f2" />
+			<img src="/images/g3.png" alt="f3" />
+			<img src="/images/g4.png" alt="f4" />
+		</div>
+	</body>
+</html>
