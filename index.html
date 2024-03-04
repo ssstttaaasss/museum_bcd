@@ -3,39 +3,45 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home page</title>
-		<meta name="author" content="Подоляка Станіслав ІК-24" />
-		<link rel="stylesheet" href="styles.css" />
+		<title>Home Page</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap"
-		/>
+		<style>
+			body {
+				background-color: #e7bd68;
+				color: #333;
+				font-family: Arial, sans-serif;
+				padding: 20px;
+				text-align: justify;
+			}
+			h1 {
+				color: #0066cc;
+			}
+			a {
+				color: #990000;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			.floating-frame {
+				float: right;
+				width: 600px;
+				height: 400px;
+				margin-left: 10px;
+				border: 1px solid black;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Welcome</h1>
-
-		<h2>Choose museum:</h2>
-
-		<a href="Greece.html">
-			<figure class="museum">
-				<img src="images/greece.png" alt="Греція" />
-				<figcaption>National Archeology Museum</figcaption>
-			</figure>
-		</a>
-
-		<a href="British Museum.html">
-			<figure class="museum">
-				<img src="images/uk.png" alt="Велика Британія" />
-				<figcaption>British Museum</figcaption>
-			</figure>
-		</a>
-
-		<a href="Louvre.html">
-			<figure class="museum">
-				<img src="images/france.png" alt="Франція" />
-				<figcaption>Louvre</figcaption>
-			</figure>
-		</a>
+		<h1 style="font-family: Arial, sans-serif; font-size: 16px; color: #038df0">
+			<strong>Welcome to museums home page!</strong>
+		</h1>
+		<p>Here you can choose museum</p>
+		<p>
+			Check out <a href="Greece.html">Greece</a>,
+			<a href="British Museum.html">British Museum</a>, and
+			<a href="Louvre.html">Louvre</a>.
+		</p>
+		<iframe src="table.html" class="floating-frame"></iframe>
 	</body>
 </html>
