@@ -3,45 +3,74 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="'Подоляка Станіслав ІК-24" />
 		<title>Home Page</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-		<style>
-			body {
-				background-color: #e7bd68;
-				color: #333;
-				font-family: Arial, sans-serif;
-				padding: 20px;
-				text-align: justify;
-			}
-			h1 {
-				color: #0066cc;
-			}
-			a {
-				color: #990000;
-				text-decoration: none;
-			}
-			a:hover {
-				text-decoration: underline;
-			}
-			.floating-frame {
-				float: right;
-				width: 600px;
-				height: 400px;
-				margin-left: 10px;
-				border: 1px solid black;
-			}
-		</style>
+		<body background="/images/fone.jpg" />
 	</head>
 	<body>
-		<h1 style="font-family: Arial, sans-serif; font-size: 16px; color: #038df0">
-			<strong>Welcome to museums home page!</strong>
+		<h1>
+			<font color="yellow" size="30" face="Arial">
+				Welcome to the museum selection page!
+			</font>
 		</h1>
-		<p>Here you can choose museum</p>
-		<p>
-			Check out <a href="Greece.html">Greece</a>,
-			<a href="British Museum.html">British Museum</a>, and
-			<a href="Louvre.html">Louvre</a>.
-		</p>
-		<iframe src="table.html" class="floating-frame"></iframe>
+		<h2>
+			<font color="white" size="6" face="Arial">
+				Here you can choose a museum based on various features for a great time
+			</font>
+		</h2>
+		<ol>
+			<li>
+				<a href="/British Museum.html" style="color: rgb(255, 0, 38)"
+					>British Museum</a
+				>
+			</li>
+			<li>
+				<a href="/Greece.html" style="color: rgb(40, 248, 81)"
+					>Greek National Museum</a
+				>
+			</li>
+			<li>
+				<a href="/Louvre.html" style="color: rgb(68, 0, 255)">Paris Louvre</a>
+			</li>
+		</ol>
+		<hr />
+		<ul>
+			<li>
+				<a href="https://www.louvre.fr/en" type="text/html">
+					<img
+						src="/images/franceico.png"
+						alt="France"
+						style="width: 50px; height: auto"
+					/>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.britishmuseum.org/" type="text/html">
+					<img
+						src="/images/united-kingdomico.png"
+						alt="UK"
+						style="width: 50px; height: auto"
+					/>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.namuseum.gr/en/" type="text/html">
+					<img
+						src="/images/greeceico.png"
+						alt="Greece"
+						style="width: 50px; height: auto"
+					/>
+				</a>
+			</li>
+		</ul>
+		<hr />
+		<iframe
+			src="https://uk.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D1%97"
+			width="500"
+			height="200"
+			frameborder="0"
+			scrolling="auto"
+		></iframe>
 	</body>
 </html>
