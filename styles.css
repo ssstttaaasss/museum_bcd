@@ -111,3 +111,12 @@ a:hover {
 .exhibit a {
 	text-decoration: none;
 }
+
+/* Context */
+div {
+	color: blue;
+}
+/* Neighbor */
+h2 + p {
+	font-weight: bold;
+}
