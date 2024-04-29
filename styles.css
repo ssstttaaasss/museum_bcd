@@ -32,10 +32,11 @@ ul li {
 }
 
 /* Стилі фонових градієнтів */
-body.index {
+/*body.index {
 	background: linear-gradient(to bottom, #484848, #9b9a9a);
 	color: #ffffff;
 }
+*/
 
 body.louvre {
 	background: linear-gradient(to bottom, #f04040, #8984c5);
@@ -77,8 +78,8 @@ a:hover {
 #floatingFrame {
 	position: fixed;
 	bottom: 0;
-	left: 0;
-	width: 100%;
+	right: 0;
+	width: 50%;
 	height: 100px;
 	border: 5px solid #000000;
 	background-color: #8d8383;
@@ -128,7 +129,7 @@ span {
 }
 
 .highlight {
-    position: relative; 
+    /* position: relative; */
     background-color: yellow; 
     padding: 5px; 
 }

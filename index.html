@@ -7,6 +7,8 @@
 		<title>Home Page</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 		<link rel="stylesheet" href="styles.css">
+		
+
 
 		<style>
 			h1,
@@ -28,14 +30,21 @@
 		</style>
 	</head>
 	<body class="index">
-		<h1>Welcome to the museum selection page!</h1>
+		<script src="script.js"></script>
+		<h1 id="welcome-message">Welcome to the museum selection page, </h1>
+		<div id="remove-me">Цей елемент буде видалений.</div>
+
 		<p style="color: burlywood;">
 			We invite you on an exciting journey into the world of art and history! Choose your museum and enjoy unique exhibitions.
 		</p>
 		<h2>
 			Here you can choose a museum based on various features for a great time
 		</h2>
-		<p> <span class="highlight">We open the door to the unique worlds of history, art, science and culture through the lens of the camera and the word of experts. From ancient artifacts to modern masterpieces, from stunning expositions to fascinating interactive experiments - each museum in our collection is an in-depth look at the world around us.</span></p>
+		<p> <span class="highlight">We open the door to the unique worlds of history, 
+			art, science and culture through the lens of the camera and the word of experts. 
+			From ancient artifacts to modern masterpieces, from stunning expositions to 
+			fascinating interactive experiments - each museum in our collection is an in-depth 
+			look at the world around us.</span></p>
 		
 		<ol>
 			<li>
@@ -110,4 +119,10 @@
 			id="floatingFrame"
 		></iframe>
 	</body>
+	<script>// Створення нового елемента, текстового вузла та вставка їх у документ
+		var newParagraph = document.createElement("p");
+		var paragraphText = document.createTextNode("This is a new paragraph added dynamically.");
+		newParagraph.appendChild(paragraphText);
+		document.body.appendChild(newParagraph);</script>
+	
 </html>
