@@ -8,31 +8,29 @@
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 		<link rel="stylesheet" href="styles.css">
 		
-
-
 		<style>
 			h1,
 			h2 {
 				color: white;
 			}
-			a {
-				color: rgb(0, 0, 0);
-			}
 
 			/* Subsidiaries */
 			ul > li,
 			ol > li {
-    list-style-type: circle; 
-    padding: 1; 
-    margin: 1; 
-}
+    		list-style-type: circle; 
+   		 	padding: 1; 
+    		margin: 1; 
+			}
 
 		</style>
 	</head>
 	<body class="index">
 		<script src="script.js"></script>
 		<h1 id="welcome-message">Welcome to the museum selection page, </h1>
-		<div id="remove-me">Цей елемент буде видалений.</div>
+		<button id="redirectButton">GOOGLE</button>
+		<p id="example-element">example-element</p>
+		<div id="example1-element">example1-element</div>
+		<div id="example2-element">example2-element</div>
 
 		<p style="color: burlywood;">
 			We invite you on an exciting journey into the world of art and history! Choose your museum and enjoy unique exhibitions.
@@ -119,10 +117,21 @@
 			id="floatingFrame"
 		></iframe>
 	</body>
-	<script>// Створення нового елемента, текстового вузла та вставка їх у документ
+		<script>// Створення нового елемента, текстового вузла та вставка їх у документ
 		var newParagraph = document.createElement("p");
 		var paragraphText = document.createTextNode("This is a new paragraph added dynamically.");
 		newParagraph.appendChild(paragraphText);
-		document.body.appendChild(newParagraph);</script>
+		document.body.appendChild(newParagraph);
+		
+		// Функція для перенаправлення при кліку на кнопку
+        function redirectToGoogle() {
+            // Зміна адреси поточної сторінки
+            window.location.href = "http://www.google.com";
+        }
+
+        // Додаємо обробник події для кліку на кнопку
+        document.getElementById("redirectButton").addEventListener("click", redirectToGoogle);
+		
+		</script>
 	
 </html>

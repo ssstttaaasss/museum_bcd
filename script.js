@@ -73,13 +73,34 @@ window.onload = function() {
         document.body.style.backgroundColor = "grey";
     }, 30000);
     
-    // Перенаправлення браузера на іншу сторінку (в новій вкладці)
-    window.open("http://www.google.com", "_blank");
-
     // Зміна тексту в H1 елементі за допомогою getElementById
     document.getElementById("welcome-message").textContent += userName;
 
-    // Видалення елемента за допомогою remove()
-    var elementToRemove = document.getElementById("remove-me");
-    elementToRemove.remove();
+    // Вибираємо всі елементи <a> на сторінці
+    var links = document.querySelectorAll("a");
+
+    // Змінюємо колір тексту усіх посилань
+        links.forEach(function(link) {
+        link.style.color = "red"; // Новий колір тексту
+    });
+
+    // inner
+    var element = document.getElementById("example-element");
+    // Використання властивості innerHTML для встановлення HTML вмісту елементу
+    element.innerHTML = "<p>This is new paragraph</p>";
+
+    // outerHTML 
+    var element = document.getElementById("example1-element");
+    element.outerHTML = "<div>New div</div>";
+
+    // nodeValue/data
+    var textNode = document.createTextNode("New text node");
+    document.body.appendChild(textNode);
+
+    //textContent
+    var element = document.getElementById("example2-element");
+
+    element.textContent = "New text content";
+
 };
+
