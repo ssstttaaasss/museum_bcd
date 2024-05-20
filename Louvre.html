@@ -6,59 +6,59 @@
 		<title>Louvre Museum</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="styles.css" />
-		<style>
-			/* Внутрішній стиль для абзаців */
-			p {
-				padding: 10px;
-				background-color: #cdcdcd;
-				transition: background-color 0.3s ease;
-				border-radius: 15px;
-			}
-
-			/* Анімація при наведенні на абзац */
-			p:hover {
-				background-color: #c0c0c0;
-				transform: scale(1.03); /* Збільшення розміру абзацу */
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-			}
-		</style>
+		
 	</head>
 	<body class="louvre">
-		<a href="index.html" class="button-link">
-			<img src="/images/homepage.png" alt="Home Page" />
-		</a>
-		<h1>Welcome to the Louvre page!</h1>
-		<ul>
-			<li><a href="#collections">Collections</a></li>
-			<li><a href="#educational_role">Educational Role</a></li>
-			<li><a href="#reason_to_visit">Reason to visit</a></li>
-		</ul>
+		<div class="navbar">
+			<div class="logo">
+				<img src="/images/museum.png" alt="MusChoose Icon" style="width: 30px; height: auto; margin-right: 10px;"> 
+				<span>MusChoose</span>
+			</div>
+			<div class="links">
+				<a href="#collections">Collections</a>
+				<a href="#educational_role">Educational Role</a>
+				<a href="#reason_to_visit">Reason to visit</a>
+			</div>
+			<div class="links home-link">
+				<a href="index.html" class="button-link">
+					<img src="/images/homepage.png" alt="Home Page" />
+				</a>
+			</div>
+		</div>
+		
+		<div class="navbar-space"></div>
+		
+		<div class="container">
+			<div class="fullscreen-image-wrapper" id="collections">
+				<img src="/images/fc.png" alt="GM" class="fullscreen-image">
+				<div class="image-overlay">
+					<h1>Collections</h1>
+					<p>The Louvre has one of the largest and most diverse art collections in the
+						world, including masterpieces of both ancient, medieval, renaissance and
+						modern art.</p>
+				</div>
+			</div>
+			<div class="spacer"></div>
+			<div class="fullscreen-image-wrapper" id="educational_role">
+				<img src="/images/fe.png" alt="FM" class="fullscreen-image">
+				<div class="image-overlay">
+					<h1>Educational role</h1>
+					<p>The museum offers a variety of tours, lectures and educational programs
+						for visitors of various age groups, helping to reveal the richness of its
+						collections.</p>
+				</div>
+			</div>
+			<div class="spacer"></div>
+			<div class="fullscreen-image-wrapper" id="reason_to_visit">
+				<img src="/images/fr.png" alt="BM" class="fullscreen-image">
+				<div class="image-overlay">
+					<h1>Reason to visit</h1>
+					<p>If you are interested in art from different eras and cultures, the Louvre
+						will be an unforgettable place for you.</p>
+				</div>
+			</div>
+		</div>
 
-		<a href="/images/france.png" target="_blank">
-			<img
-				src="images/france.png"
-				alt="France"
-				style="width: 150px; height: auto"
-			/>
-		</a>
-		<p class="special-paragraph">
-			<strong>Collections:</strong><br />
-			The Louvre has one of the largest and most diverse art collections in the
-			world, including masterpieces of both ancient, medieval, renaissance and
-			modern art.
-		</p>
-		<p>
-			<strong>Educational role:</strong><br />
-			The museum offers a variety of tours, lectures and educational programs
-			for visitors of various age groups, helping to reveal the richness of its
-			collections.
-		</p>
-		<p>
-			<strong>Reason to visit:</strong><br />
-			If you are interested in art from different eras and cultures, the Louvre
-			will be an unforgettable place for you.
-		</p>
-		<hr />
 		<div class="exhibit-table">
 			<div class="row">
 				<div class="exhibit">Exhibit 1</div>

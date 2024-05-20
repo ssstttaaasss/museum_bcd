@@ -7,131 +7,74 @@
 		<title>Home Page</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 		<link rel="stylesheet" href="styles.css">
-		
-		<style>
-			h1,
-			h2 {
-				color: white;
-			}
-
-			/* Subsidiaries */
-			ul > li,
-			ol > li {
-    		list-style-type: circle; 
-   		 	padding: 1; 
-    		margin: 1; 
-			}
-
-		</style>
 	</head>
 	<body class="index">
-		<script src="script.js"></script>
-		<h1 id="welcome-message">Welcome to the museum selection page, </h1>
-		<button id="redirectButton">GOOGLE</button>
-		<p id="example-element">example-element</p>
-		<div id="example1-element">example1-element</div>
-		<div id="example2-element">example2-element</div>
+		<div class="navbar">
+			<div class="logo">
+				<img src="/images/museum.png" alt="MusChoose Icon" style="width: 30px; height: auto; margin-right: 10px;"> 
+				<span>MusChoose</span>
+			</div>
+			<div class="links">
+				<a href="/British Museum.html"><img src="/images/united-kingdomico.png" alt="British Museum" style="width: 50px; height: auto"></a>
+				<a href="/Greece.html"><img src="/images/greeceico.png" alt="Greek National Museum" style="width: 50px; height: auto"></a>
+				<a href="/Louvre.html"><img src="/images/franceico.png" alt="Paris Louvre" style="width: 50px; height: auto"></a>
+			</div>
+		</div>
+		<div class="navbar-space"></div>
 
-		<p style="color: burlywood;">
-			We invite you on an exciting journey into the world of art and history! Choose your museum and enjoy unique exhibitions.
-		</p>
-		<h2>
-			Here you can choose a museum based on various features for a great time
-		</h2>
-		<p> <span class="highlight">We open the door to the unique worlds of history, 
-			art, science and culture through the lens of the camera and the word of experts. 
-			From ancient artifacts to modern masterpieces, from stunning expositions to 
-			fascinating interactive experiments - each museum in our collection is an in-depth 
-			look at the world around us.</span></p>
-		
-		<ol>
-			<li>
-				<a href="/British Museum.html" "
-					>British Museum</a
-				>
-			</li>
-			<li>
-				<a href="/Greece.html" "
-					>Greek National Museum</a
-				>
-			</li>
-			<li>
-				<a href="/Louvre.html" ">Paris Louvre</a>
-			</li>
-		</ol>
-		<hr />
-		<ul>
-			<li>
-				<a href="https://www.louvre.fr/en" type="text/html">
-					<img
-						src="/images/franceico.png"
-						alt="France"
-						style="width: 50px; height: auto"
-					/>
-				</a>
-			</li>
-			<li>
-				<a href="https://www.britishmuseum.org/" type="text/html">
-					<img
-						src="/images/united-kingdomico.png"
-						alt="UK"
-						style="width: 50px; height: auto"
-					/>
-				</a>
-			</li>
-			<li>
-				<a href="https://www.namuseum.gr/en/" type="text/html">
-					<img
-						src="/images/greeceico.png"
-						alt="Greece"
-						style="width: 50px; height: auto"
-					/>
-				</a>
-			</li>
+		<h1></h1>
+
+		<h1>Welcome to MusChoose!</h1>
+		<p class="intro-text">We invite you to a fascinating journey into the world of majestic artistic masterpieces and cultural diversity! Our website is a virtual platform that opens the doors to three of the most famous museums in the world: the Greek, the British, and the Louvre.</p>
+		<p class="more-info">Join us on our website to discover the wonders of art and history that are embedded in these remarkable museums. May your journey be filled with impressions and inspiration!</p>
+
+		<div class="container">
+			<div class="fullscreen-image-wrapper">
+				<img src="/images/gm.png" alt="GM" class="fullscreen-image">
+				<div class="image-overlay">
+					<h1>The Greek Museum</h1>
+					<p>The Greek Museum is a magical place where you can immerse yourself in ancient culture and art. From the works of marble sculptors to amazing ceramic vases, each exhibit tells its own story, revealing the unique spirit of bygone eras.</p>
+				</div>
+			</div>
+			<div class="spacer"></div>
+			<div class="fullscreen-image-wrapper">
+				<img src="/images/fm.png" alt="FM" class="fullscreen-image">
+				<div class="image-overlay">
+					<h1>The Louvre</h1>
+					<p>The British Museum is a treasure trove of world cultural heritage that spans eras and civilisations from around the world. From ancient Egyptian relics to luxurious crafts from the Middle Ages, this museum offers endless opportunities for exploration and research.</p>
+				</div>
+			</div>
+			<div class="spacer"></div>
+			<div class="fullscreen-image-wrapper">
+				<img src="/images/bm.png" alt="BM" class="fullscreen-image">
+				<div class="image-overlay">
+					<h1>The British Museum</h1>
+					<p>The Louvre is the crown jewel of the global art scene. With its majestic corridors and halls, it welcomes you into a world of the greatest masterpieces of the Renaissance, Baroque and Modern periods. From the Mona Lisa to the Venus of Milo, each work of art tells its own unique story and captivates with its beauty.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="button" id="loadContent">Load Content</div>
+		<div class="button" id="removeHandler">Remove Load Content Handler</div>
+		<div class="content" id="contentArea">Content will be loaded here...</div>
+
+		<ul id="myList">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
 		</ul>
-		<hr />
-		<div class="container">
-			<div class="float-left">Лівий блок</div>
-			<div class="float-right">Правий блок</div>
-			<div class="content">Основний вміст</div>
-		</div>
-		<hr />
-		<a href="https://museums.authenticukraine.com.ua/ua/" class="custom-link"> link </a>
-		<a href="https://frankovi.com.ua/3d-tur/" class="custom-link"> visited </a>
-		<a href="https://museum-portal.com/ua/muzeyi/174_istoriko-kulturniy-muzey-zapovidnik--lichakivskiy-cvintar-" class="custom-link"> hover </a>
-		<a href="https://potocki-palace-lviv.virtual.ua/ua/3d-tour/" class="custom-link"> active </a>
-		<hr />
-		<div class="parent">
-			<p>Перший дочірній елемент</p>
-			<p>Другий дочірній елемент</p>
-			<p>Третій дочірній елемент</p>
-		</div>
-		<hr />
-		<div class="container">
-			<p class="content">Текст</p>
-		</div>
-		<hr />
-		
-		<iframe
-			src="https://uk.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D1%97"
-			id="floatingFrame"
-		></iframe>
-	</body>
-		<script>// Створення нового елемента, текстового вузла та вставка їх у документ
-		var newParagraph = document.createElement("p");
-		var paragraphText = document.createTextNode("This is a new paragraph added dynamically.");
-		newParagraph.appendChild(paragraphText);
-		document.body.appendChild(newParagraph);
-		
-		// Функція для перенаправлення при кліку на кнопку
-        function redirectToGoogle() {
-            // Зміна адреси поточної сторінки
-            window.location.href = "http://www.google.com";
-        }
 
-        // Додаємо обробник події для кліку на кнопку
-        document.getElementById("redirectButton").addEventListener("click", redirectToGoogle);
-		
-		</script>
+		<div id="text">Це текст, колір якого можна змінити</div>
+
+		<div class="menu">
+  		<button class="menu-button" data-color="black">Чорний</button>
+  		<button class="menu-button" data-color="red">Червоний</button>
+  		<button class="menu-button" data-color="green">Зелений</button>
+
+		<script src="script.js"></script>
+
+	</body>	
 	
 </html>
